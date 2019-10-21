@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.outerCard {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  background-color: #f1f1f1;
+  width: 99%;
+  display: inline-block;
+   align-items: center; 
+   justify-content: center;
+}
+.innerCard {
+  padding: 16px;
+  top: 2%;
+  width: 100%;
+  display: flex;
+   align-items: center; 
+}
+
+.ButonContainer {
+   justify-content: center;
+  display: flex;
+   align-items: center; 
+}
+
+
+.TitleContainer {
+justify-content:flex-start;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  
+font-weight: bold;}
+
+img {
+max-width:100%;
+max-height:100%;
+}
+
+.button {
+	justify-content: center;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+
+.Description {
+	color: black;
+  	font-size: 100%;
+  	display: flex;
+  align-items: flex-start;
+}
+
+.Date {
+	color: grey;
+	 text-align: left;
+  	font-size: 50%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
