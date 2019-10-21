@@ -6,8 +6,10 @@
 <link rel="stylesheet" type="text/css" href="../css/overall.css" />
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/add.js"></script>
+<script src="../js/add2.js"></script>
 </head>
 <body>
 
@@ -18,14 +20,17 @@
 		</div>
 
 		<div class="innerCard">
-			<textarea class="textinputDescripiton" type="text" name="username"
+			<textarea class="textinputDescripiton" type="text" name="username" id="description"
 				rows="3" draggable="false"></textarea>
 		</div>
 		<div class="innerCard">
-			<div class="uploadButton">Upload photo</div>
+			<div class="uploadButton" onclick="uploadFile();">Upload photo</div>
+			<input id ="image" hidden="true"/>
+			<input type="file" id="fileToUpload" onchange="uploadFile();" class="uploadButton" />
 		</div>
 		<div class="innerCard">
 			<img
+			id ="file_data"
 				src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
 				alt="cat image">
 
@@ -41,16 +46,16 @@
 		</div>
 
 		<div class="innerCard">
-			<select>
-				<option value="volvo">Tunis</option>
-				<option value="saab">Ariana</option>
-				<option value="mercedes">Kef</option>
-				<option value="audi">Jendouba</option>
+			<select id="town">
+				<option value="Tunis">Tunis</option>
+				<option value="Ariana">Ariana</option>
+				<option value="Kef">Kef</option>
+				<option value="Jendouba">Jendouba</option>
 			</select>
 		</div>
 
 		<div class="ButonContainer">
-			<button class="RoundButton">Add post</button>
+			<button class="RoundButton" onclick="addPost()">Add post</button>
 		</div>
 	</div>
 
