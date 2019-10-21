@@ -1,74 +1,73 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .outerCard {
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 5px;
-  background-color: #f1f1f1;
-  width: 99%;
-  display: inline-block;
-   align-items: center; 
-   justify-content: center;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: 5px;
+	background-color: #f1f1f1;
+	width: 99%;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
 }
+
 .innerCard {
-  padding: 16px;
-  top: 2%;
-  width: 100%;
-  display: flex;
-   align-items: center; 
+	padding: 16px;
+	top: 2%;
+	width: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .ButonContainer {
-   justify-content: center;
-  display: flex;
-   align-items: center; 
+	justify-content: center;
+	display: flex;
+	align-items: center;
 }
 
-
 .TitleContainer {
-justify-content:flex-start;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  
-font-weight: bold;}
+	justify-content: flex-start;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: flex;
+	font-weight: bold;
+}
 
 img {
-max-width:100%;
-max-height:100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .button {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-border-radius: 30px; 
-text-align: center;
-width :60%;
-font-size : 20px;
-border-style: solid;
-border-width: 2px;
-border-color : #3c89c3;
-color : white;
-background-color: #3c89c3 ;
-margin-top : 10%;
+	border-radius: 30px;
+	text-align: center;
+	width: 60%;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #3c89c3;
+	color: white;
+	background-color: #3c89c3;
+	margin-top: 10%;
 }
-
 
 .Description {
 	color: black;
-  	font-size: 100%;
-  	display: flex;
-  align-items: flex-start;
+	font-size: 100%;
+	display: flex;
+	align-items: flex-start;
 }
 
 .Date {
 	color: grey;
-	 text-align: left;
-  	font-size: 50%;
+	text-align: left;
+	font-size: 50%;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
