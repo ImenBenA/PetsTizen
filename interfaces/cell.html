@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/cell.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="outerCard">
+  <div class="innerCard">
+  	<div class="TitleContainer">
+    
+    	<div class="TitleImage">
+    		<img src="../images/tag_green.png">
+  		</div>
+
+  		<div class="Title">
+    		Title
+  		</div>
+
+  		<div class="Next">
+    		<img src="../images/next.png">
+  		</div>
+
+	</div>
+
+  </div>
+  
+  <div class="innerCard">
+  <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="cat image">
+  
+  </div>
+  
+  <div class="innerCard">
+  <div class="Description">
+  description desc desscription ption pdescription desc desscr cription desc desscrption desc desscrription desc desscrndescription desc desscr
+  </div>
+  </div>
+  
+  <div class="innerCard">
+  <div class="Date">
+  20/10/2019 
+  </div>
+  </div>
+</div>
+
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
