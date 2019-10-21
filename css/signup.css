@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: white;
     color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .page {
     width: 100%;
@@ -41,7 +42,7 @@ body {
 }
 .textinput{
 	width:80%;
-	border-radius: 0px 50px 30px;
+	border-radius: 0px 30px 30px 30px;
 	margin-bottom: 0%;
 	font-size : 25px;
 	background-color: Transparent;
@@ -52,7 +53,6 @@ border-color: #3c89c3;
 }
 .textlogin{
 	font-size: 30px;
-	font-family: sans-serif-medium;
 	margin-bottom: 5%;
 	margin-top: 10%	;
 	color: #3c89c3;
@@ -62,15 +62,13 @@ border-color: #3c89c3;
 font-size: 25px;
 margin-bottom : 1%;
 color : #3c89c3;
-font-family : sans-serif-light ;  
 }
 .loginbutton{
 border-radius: 30px; 
 text-align: center;
 width :60%;
 margin-left : 10%;
-font-size : 25px;
-background-color: Transparent;
+font-size : 20px;
 border-style: solid;
 border-width: 2px;
 border-color : #3c89c3;
