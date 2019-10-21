@@ -32,7 +32,14 @@
 .TitleImage {
 	width: 20%;
 	display: flex;
+	position: relative;
 	align-items: center;
+}
+
+
+.inner-image {
+  position: absolute;
+  width: 50%;
 }
 
 .Title {

@@ -13,7 +13,7 @@
                 for (i=0 ; i < postArray.length ; i++){
                 	post = postArray[i];
                 	if (post.type == type)
-                	cells += '<div class="outerCard"><div class="innerCard"><div class="TitleContainer"><div class="TitleImage"><img src="../images/tag_'+type+'.png"></div><div class="Title">'+post.petType+' '+type+' near '+post.town+'</div><div class="Next"><img src="../images/next.png"></div></div></div><div class="innerCard"><img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="cat image"></div><div class="innerCard"><div class="Description">'+post.description+'</div></div><div class="innerCard"><div class="Date">'+post.date+'</div></div> </div> ';
+                	cells += '<div class="outerCard"><div class="innerCard"><div class="TitleContainer"><div class="TitleImage"><img src="../images/tag_'+type+'.png"> <img src="../images/icon_'+type+'.png" class="inner-image"> </div><div class="Title">'+post.petType+' '+type+' near '+post.town+'</div><div class="Next"><img src="../images/next.png"></div></div></div><div class="innerCard"><img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="cat image"></div><div class="innerCard"><div class="Description">'+post.description+'</div></div><div class="innerCard"><div class="Date">'+post.date+'</div></div> </div> ';
                 	//fillCells(postArray[i]);
                 }
                 document.getElementById("view").innerHTML = cells;
