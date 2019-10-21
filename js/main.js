@@ -19,3 +19,27 @@ window.onload = function() {
         contentText.innerHTML = (contentText.innerHTML === "Basic") ? "Tizen" : "Basic";
     });
 };
+function login(){
+	var username , password ;
+	username = document.loginform.username.value;
+	password = document.loginform.password.value;
+	if (window.XMLHttpRequest){
+		xhr = new XMLHttpRequest();
+	}
+		xhr.open("POST", 'http://41.226.11.252:1180/pets/user/userByUsernamePassword.php', true);
+		//xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+		xhr.onreadystatechange = function(){
+		if(xhr.readyState == 4 )
+		{
+			var JsonUser = JSON.parse(xhr.responseText);
+            console.log("user"+JsonUser);
+			if (JsonUser.username == undefined && JsonUser.password == undefined)
+			alert("Wrong informations");
+			else 
+			location.href = "interfaces/home.html";
+		}
+
+	}
+	xhr.send(JSON.stringify({ "username": "fedi123", "password": "fedi123" }));
+	alert("chay ");
+}

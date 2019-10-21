@@ -2,10 +2,6 @@
 	box-sizing: border-box;
 }
 
-body .my-slider {
-    display: none !important;
-}
-
 .textinputDescripiton {
 	min-width: 100%;
 	max-width: 100%;
@@ -22,9 +18,9 @@ body .my-slider {
 .outerCard {
 	position: relative;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	margin: 1px;
+	margin: 5px;
 	background-color: #f1f1f1;
-	width: 100%;
+	width: 99%;
 	display: inline-block;
 	align-items: center;
 	justify-content: center;
