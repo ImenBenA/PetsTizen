@@ -48,6 +48,7 @@
 	text-align: left;
 	display: flex;
 	align-items: center;
+		font-weight: bold;
 }
 
 .Next {
