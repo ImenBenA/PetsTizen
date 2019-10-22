@@ -3,10 +3,10 @@
     <access origin="41.226.11.252:1180" subdomains="true"></access>
     <access origin="41.226.11.252" subdomains="true"></access>
     <tizen:application id="wHluZzY7YT.BasicUI" package="wHluZzY7YT" required_version="3.0"/>
-    <content src="interfaces/profile.html"/>
+    <content src="interfaces/home.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
-    <name>BasicUI</name>
+    <name>Pets</name>
     <tizen:privilege name="http://tizen.org/privilege/internet"/>
     <tizen:profile name="mobile"/>
 </widget>
