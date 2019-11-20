@@ -35,11 +35,21 @@ function login(){
             console.log("user"+JsonUser);
 			if (JsonUser.username == undefined && JsonUser.password == undefined)
 			alert("Wrong informations");
-			else 
-			location.href = "interfaces/home.html";
+			else {
+				console.log(JsonUser.id);
+				localStorage.removeItem("connected");
+				localStorage.setItem("connected", JsonUser.id);
+				location.href = "interfaces/home.html";
+			}
+			
 		}
 
 	}
-	xhr.send(JSON.stringify({ "username": "fedi123", "password": "fedi123" }));
-	alert("chay ");
+	xhr.send(JSON.stringify({ "username": username, "password": password }));
+	alert ("Clicked");
+}
+function checklogin (){
+	if (localStorage.getItem("connected") != null)
+		location.href = "interfaces/home.html";
+		
 }

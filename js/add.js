@@ -1,5 +1,12 @@
 function uploadFile() {
     var fileForUpload = document.getElementById('fileToUpload').files[0];
+    var reader = new FileReader();
+    reader.onload = function(){
+      var dataURL = reader.result;
+      var output = document.getElementById('file_data');
+      output.src = dataURL;
+    };
+    reader.readAsDataURL(fileForUpload);
     //document.getElementById("file_data").src = fileForUpload;
     getBase64(fileForUpload);
     /*var xhr = new XMLHttpRequest();

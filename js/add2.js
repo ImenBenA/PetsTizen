@@ -1,7 +1,17 @@
 function addPost() {
     var town = document.getElementById("town").value;
     var image = document.getElementById("image").value;
-    //var type=document.getElementById("type").value;
+    var type;
+    if(document.getElementById('r1').checked){
+        type = document.getElementById('r1').value;
+
+    }else if(document.getElementById('r2').checked){
+    	type = document.getElementById('r2').value;
+
+    }else if(document.getElementById('r3').checked){
+    	type = document.getElementById('r3').value;
+    }  
+
     var description = document.getElementById("description").value;
     //var petType=document.getElementById("petType").value;
     if (image == "" || description == "" || town == "")
@@ -15,16 +25,17 @@ function addPost() {
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4) {
                 console.log("user");
+                location.href = "home.html";
             }
 
         }
         xhr.send(JSON.stringify({
             "description": description,
             "petImage": image,
-            "type": "cat",
+            "type": type,
             "user_id": "60",
             "date": "2009-12-31 11:11:11",
-            "petType": "fedi123",
+            "petType": "Cat",
             "town": town
         }));
     }
