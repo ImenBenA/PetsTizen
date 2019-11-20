@@ -13,7 +13,7 @@
                 for (i=0 ; i < postArray.length ; i++){
                 	post = postArray[i];
                 	if (post.type == type)
-                	cells += '<div class="outerCard"  onclick="details('+ post.id +')><div class="innerCard"><div class="TitleContainer"><div class="TitleImage"><img src="../images/tag_'+type+'.png">  </div><div class="Title">'+post.petType+' '+type+' near '+post.town+'</div><div class="Next"><img src="../images/next.png"></div></div></div><div class="innerCard"><img src="http://41.226.11.252:1180/pets/post/'+post.petImage+'" alt="cat image"></div><div class="innerCard"><div class="Description">'+post.description+'</div></div><div class="innerCard"><div class="Date">'+post.date+'</div></div> </div> ';
+                	cells += '<div class="outerCard"  onclick="details('+ post +')"><div class="innerCard"><div class="TitleContainer"><div class="TitleImage"><img src="../images/tag_'+type+'.png">  </div><div class="Title">'+post.petType+' '+type+' near '+post.town+'</div><div class="Next"><img src="../images/next.png"></div></div></div><div class="innerCard"><img src="http://41.226.11.252:1180/pets/post/'+post.petImage+'" alt="cat image"></div><div class="innerCard"><div class="Description">'+post.description+'</div></div><div class="innerCard"><div class="Date">'+post.date+'</div></div> </div> ';
                 	//fillCells(postArray[i]);
                 		}
                 document.getElementById("view").innerHTML = cells;
@@ -28,34 +28,9 @@
     	//alert("chay");
     	}
     	
-    	function details(type){
-        	if (window.XMLHttpRequest){
-        		xhr = new XMLHttpRequest();
-        	}
-        		xhr.open('GET', 'http://41.226.11.252:1180/pets/post/allPosts.php');
-        		//xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-        		xhr.onreadystatechange = function(){
-        		if(xhr.readyState == 4 )
-        		{
-        			var postArray = JSON.parse(xhr.responseText);
-        			var cells ="";
-        			var post ;
-                    for (i=0 ; i < postArray.length ; i++){
-                    	post = postArray[i];
-                    	if (post.type == type)
-                    	cells += '<div class="outerCard"  onclick="details('+ post.id +')><div class="innerCard"><div class="TitleContainer"><div class="TitleImage"><img src="../images/tag_'+type+'.png">  </div><div class="Title">'+post.petType+' '+type+' near '+post.town+'</div><div class="Next"><img src="../images/next.png"></div></div></div><div class="innerCard"><img src="http://41.226.11.252:1180/pets/post/'+post.petImage+'" alt="cat image"></div><div class="innerCard"><div class="Description">'+post.description+'</div></div><div class="innerCard"><div class="Date">'+post.date+'</div></div> </div> ';
-                    	//fillCells(postArray[i]);
-                    		}
-                    document.getElementById("view").innerHTML = cells;
-        			/*if (JsonUser.username == undefined && JsonUser.password == undefined)
-        			alert("Wrong informations");
-        			else 
-        			location.href = "interfaces/home.html";*/
-        		}
-
-        	}
-        	xhr.send();
-        	//alert("chay");
+    	function details(post){
+    		console.log("aaaaaa");
+    		location.href = "post_details.html";
         	}
     	
     	function getMyData(type){
