@@ -1,55 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<title></title>
-<!--<link rel="stylesheet" type="text/css" href="../css/profile2.css" />-->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-</style>
+<meta charset="utf-8" />
+<meta name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Tizen Mobile Web Basic Template" />
+
+<title>Profile</title>
+
+<link rel="stylesheet" type="text/css" href="../css/profile.css" />
 <script type="text/javascript" src="../js/back_home.js"></script>
 <script src="../js/profile.js"></script>
 </head>
+
 <body>
 
-<div class="header">
-  <img class="image" src="../images/profile.png">
-  <h2>Username</h2>
-</div>
-
-<div class="row">
-  <div class="column1" >
-  <img class="icon" src="../images/ic_username.png">
-  </div>
-  <div class="column2" >
-  <input class="textinput">
-  </div>
-</div>
-
-<div class="row">
-  <div class="column1">
-  <img class="icon" src="../images/ic_phone.png">
-  </div>
-  <div class="column2">
-  <input class="textinput">
-  </div>
-</div>
-
-<div class="ButtonContainer" onclick="call()">
-		<button class="button">Save</button>
+	<div class="section1">
+		<div class="card1" onclick="navigate('add')">
+			<div class="profile-image">
+				<img class="cardimage" src="../images/profile.png">
+			</div>
+      <div class="textform">Phone Number</div>
+  		<input class="textinput" id="username">
+			<div class="textform">Password</div>
+			<input type="password" class="textinput" id="password">
+      <div class="space"></div>
+      <hr class="hr" />
+      <button class="button" onclick="save()" >Save</button>
+      <button class="buttonw" onclick="logout()" >Log out</button>
+		</div>
 	</div>
-
-
-<div class="footer">
   
-<div class="ButtonContainer">
-		<button class="footerButton" onclick="logout()">Logout</button>
-	</div>
-	<div class="ButtonContainer">
-		<button class="footerButton">Delete account</button>
-	</div>
-
-</div>
-
+  
+  
+  
 </body>
+
 </html>
+
+
