@@ -28,7 +28,7 @@
     	//alert("chay");
     	}
     	
-    	function details(type){
+    	/*function details(type){
         	if (window.XMLHttpRequest){
         		xhr = new XMLHttpRequest();
         	}
@@ -51,12 +51,12 @@
         			alert("Wrong informations");
         			else 
         			location.href = "interfaces/home.html";*/
-        		}
+        		/*}
 
         	}
         	xhr.send();
         	//alert("chay");
-        	}
+        	}*/
     	
     	function getMyData(type){
         	if (window.XMLHttpRequest){
