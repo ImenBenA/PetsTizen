@@ -23,31 +23,29 @@
 		<div class="innerCard">
 			<textarea class="textinputDescripiton" type="text" name="username" id="description"
 				rows="3" draggable="false"></textarea>
-		</div>
+		</div>  
 		<div class="innerCard">
-			<div class="uploadButton" onclick="uploadFile();">Upload photo</div>
 			<input id ="image" hidden="true"/>
 			<input type="file" id="fileToUpload" onchange="uploadFile();" class="uploadButton" />
+			<label for="fileToUpload">Choose a file</label>
 		</div>
 		<div class="innerCard">
 			<img
 			id ="file_data"
-				src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+				src="../images/insert.png"
 				alt="cat image">
 
 		</div>
 
-		<div class="innerCard">
-			<form action="/action_page.php" method="get">
-				<input type="radio" name="petType" value="Cat"> Cat<br>
-				<input type="radio" name="petType" value="Dog" checked> Dog<br>
-				<input type="radio" name="petType" value="Other" checked>
+		<div class="innerCard" id="rates">
+				<input type="radio" id="r1" name="rate" value="Cat"> Cat<br> 
+				<input type="radio" id="r2" name="rate" value="Dog" checked> Dog<br>
+				<input type="radio" id="r3" name="rate" value="Other" checked>
 				Other<br>
-			</form>
 		</div>
 
 		<div class="innerCard">
-			<select id="town">
+			<select id="town" class="select-css">
 				<option value="Tunis">Tunis</option>
 				<option value="Ariana">Ariana</option>
 				<option value="Kef">Kef</option>

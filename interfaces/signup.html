@@ -11,6 +11,8 @@
 
 <link rel="stylesheet" type="text/css" href="../css/signup.css" />
 <link rel="stylesheet" type="text/css" href="../css/overall.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/main.js"></script>
 <script src="../js/signup.js"></script>
 </head>
 
@@ -25,12 +27,12 @@
 				<div class="textform">Username</div>
 				<input class="textinput" id="username">
 				<div class="textform">Password</div>
-				<input class="textinput" id="password">
+				<input type="password" class="textinput" id="password">
 				<div class="textform">Email</div>
-				<input class="textinput" id="email">
+				<input type="email" class="textinput" id="email">
 				<div class="textform">Phone</div>
-				<input class="textinput" id="phone">
-				<button class="loginbutton">Sign Up Now</button>
+				<input type="tel" class="textinput" id="phone">
+				<button class="loginbutton" onclick="signup()">Sign Up Now</button>
 			</form>
 		</div>
 	</div>

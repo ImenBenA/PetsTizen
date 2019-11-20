@@ -50,7 +50,8 @@
 	text-align: left;
 	display: flex;
 	align-items: center;
-		font-weight: bold;
+	font-weight: bold;
+	font-size: 50px
 }
 
 .Next {
@@ -66,7 +67,7 @@ img {
 
 .Description {
 	color: black;
-	font-size: 100%;
+	font-size: 50px;
 	display: flex;
 	align-items: flex-start;
 }
