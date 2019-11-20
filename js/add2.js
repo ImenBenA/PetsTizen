@@ -1,4 +1,5 @@
 function addPost() {
+	var description = document.getElementById("description").value;
 	var town = document.getElementById("town").value;
 	var image = document.getElementById("image").value;
 	var userId = localStorage.getItem("connected");
@@ -20,10 +21,10 @@ function addPost() {
 
 	var type;
 	if (document.getElementById('l').checked) {
-		petType = document.getElementById('l').value;
+		type = document.getElementById('l').value;
 
 	} else if (document.getElementById('f').checked) {
-		petType = document.getElementById('f').value;
+		type = document.getElementById('f').value;
 
 	} else {
 		warning = warning + " Lost or Found? ";
@@ -47,12 +48,21 @@ function addPost() {
 			}
 
 		}
+		console.log(JSON.stringify({
+			"description" : description,
+			"petImage" : "aaa",
+			"type" : type,
+			"user_id" : userId,
+			"date" : "2009-12-31",
+			"petType" : petType,
+			"town" : town
+		}));
 		xhr.send(JSON.stringify({
 			"description" : description,
 			"petImage" : image,
 			"type" : type,
 			"user_id" : userId,
-			"date" : currentTime,
+			"date" : "2009-12-31 11:11:11",
 			"petType" : petType,
 			"town" : town
 		}));
